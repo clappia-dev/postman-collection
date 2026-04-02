@@ -1,28 +1,4 @@
-name: Sync Postman Collection
-
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'collection.json'
-
-jobs:
-  sync:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Push collection to Postman
-        run: |
-              python3 -c "
-import json, sys
-with open('collection.json') as f:
-  data = json.load(f)
-wrapped = data if 'collection' in data else {'collection': data}
-json.dump(wrapped, sys.stdout)
-" | curl --silent --fail --show-error \
-                -X PUT "https://api.getpostman.com/collections/46918506-c61b35ec-a44a-44c8-9150-b7d3f388f05c" \
-                -H "X-Api-Key: ${{ secrets.POSTMAN_API_KEY }}" \
-                -H "Content-Type: application/json" \
-                -d @-
+- name: Push collection to Postman
+        env:
+          POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
+        run: python3 .github/scripts/push_collection.py
