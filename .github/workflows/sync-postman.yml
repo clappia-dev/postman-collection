@@ -1,4 +1,18 @@
-- name: Push collection to Postman
+name: Sync Postman Collection
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'collection.json'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Push collection to Postman
         env:
           POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
         run: python3 .github/scripts/push_collection.py
