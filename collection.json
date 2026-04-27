@@ -27132,7 +27132,7 @@
       "name": "File Management",
       "item": [
         {
-          "name": "Get Pre Signed URLs",
+          "name": "Generate File Upload URL",
           "request": {
             "method": "POST",
             "header": [
@@ -27165,7 +27165,7 @@
           "response": []
         },
         {
-          "name": "Put Object in the Presigned URL (S3 bucket)",
+          "name": "Upload File to the Pre-signed PUT URL",
           "request": {
             "method": "PUT",
             "header": [
@@ -27249,7 +27249,7 @@
           "response": []
         },
         {
-          "name": "Get Download URL",
+          "name": "Generate File Download URL",
           "request": {
             "method": "POST",
             "header": [
@@ -27281,7 +27281,7 @@
                 "generateFileDownloadUrl"
               ]
             },
-            "description": "## Generate File Download URL\n\nThis endpoint generates a download URL for any file uploaded in Clappia. Given a file identifier and upload category, it returns a pre-signed URL that can be used to download the file.\n\n---\n\n## `uploadCategory`\n\nThe `uploadCategory` parameter specifies the type/category of the uploaded file. To download a file from a **Clappia App Submission**, pass `uploadCategory` as `\"submissionData\"`.\n\nAll allowed values are listed below:\n\n- submissionData\n    \n- appIcon\n    \n- printTemplateHtml\n    \n- htmlBlockFile\n    \n- printTemplateFile\n    \n- attachedFile\n    \n- imageAttachedFile\n    \n- videoAttachedFile\n    \n- pdfAttachedFile\n    \n\n---\n\n## `fileId`\n\nThe `fileId` is the unique identifier for the file you want to download. This value is received from the **`getSubmissions`** or **`getSubmission`** endpoint as part of the submission data.\n\n---\n\n## Sample cURL Request\n\n``` bash\ncurl --location --request POST '{{baseUrl}}/file/generateFileDownloadUrl' \\\n--header 'Content-Type: application/json' \\\n--header &#x27;x-api-key: <your-api-key>&#x27; \\\n-d '{\n  \"appId\": \"APP123\",\n  \"fileId\": \"Use File Id received from GetSubmissions or GetSubmission API\",\n  \"uploadCategory\": \"submissionData\"\n}'\n\n ```"
+            "description": "## Generate File Download URL\n\nThis endpoint generates a download URL for any file uploaded in Clappia. Given a file identifier and upload category, it returns a pre-signed URL that can be used to download the file.\n\n---\n\n## `uploadCategory`\n\nThe `uploadCategory` parameter specifies the type/category of the uploaded file. To download a file from a **Clappia App Submission**, pass `uploadCategory` as `\"submissionData\"`.\n\nAll allowed values are listed below:\n\n- submissionData\n    \n- appIcon\n    \n- printTemplateHtml\n    \n- htmlBlockFile\n    \n- printTemplateFile\n    \n- attachedFile\n    \n- imageAttachedFile\n    \n- videoAttachedFile\n    \n- pdfAttachedFile\n    \n\n---\n\n## `fileId`\n\nThe `fileId` is the unique identifier for the file you want to download. This value is received from the **`getSubmissions`** or **`getSubmission`** endpoint as part of the submission data.\n\n---\n\n## Sample cURL Request\n\n``` bash\ncurl --location --request POST '{{baseUrl}}/file/generateFileDownloadUrl' \\\n--header 'Content-Type: application/json' \\\n--header 'x-api-key: <your-api-key>' \\\n-d '{\n  \"appId\": \"APP123\",\n  \"fileId\": \"Use File Id received from GetSubmissions or GetSubmission API\",\n  \"uploadCategory\": \"submissionData\"\n}'\n\n ```"
           },
           "response": []
         }
