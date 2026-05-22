@@ -27,7 +27,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"requestingUserEmailAddress\": \"<requesting_user_email_address>\",\n  \"data\": {\n    \"single_lin\": \"sample test 1\",\n    \"multiline_\": \"text area\",\n    \"rich_text_\": \"<h6 style=\\\"text-align:center\\\">Hello World, <strong>Hello World, </strong><em><strong>Hello World,</strong></em><a href=\\\"htttps://www.google.com\\\" title=\\\"htttps://www.google.com\\\" target=\\\"_blank\\\">Google</a>, <br><br>shreyash Kumar<br>Shreyash</h6>\",\n    \"url_input\": \"https://www.google.com\", // (must be valid URL, else will throw error (e.g. htttps:///www, and others )),\n    \"email_inpu\": \"john.dow@example.com\",  //(must be a valid email form),\n    \"drop_down\": [\"value one\", \"value two\"], // (value must be present in the options and if dependent field value is not there then will throw error),\n    \"single_sel\" : \"value nine\", // (must be.single value, not mutiple and should be present in the options and if dependent field value is not there then will throw error),\n    \"multiple_s\": [\"value one\"], // (value must be present in the options and if dependent field value is not there then will throw error),\n    \"tags\": \"value one, value two\",\n    \"date_selec\": \"01-03-2025\", // (must be in form of Workplace Date Format),\n    \"time_selec\": \"HH:mm\", //(must be in format of Workplace Time Format),\n    \"code_scann\": \"qr code value\",\n    \"nfc_reader\": \"nfc value\",\n    \"ratings\": \"5\", //(must be number in strings and must be less than or equal to the emoji value that has set),\n    \"toggle\": \"true/false\", //(must match the value of True Value and False Value),\n    \"counter\": \"5\", //(must be in range of Minimum and Maximum Value configured),\n    \"slider\": \"4\", //(must be in range of minimum and maximum value configured),\n    \"phone_numb\" : \"+91 1234567\", //(minimum 7 digit value must be there according with valid country code),\n    \"address\": {\"addressLine1\":\"line 1\",\"addressLine2\":\"line 2\",\"city\":\"city value\",\"country\":{\"code\":\"country code (e.g. IN)\",\"name\":\"Country name\"},\"state\":{\"code\":\"State Code\",\"name\":\"State name\"},\"postalCode\":\"Valid Postal Id\"},\n    \"geoaddress\": {\"lat\":12.9755805,\"long\":77.62406159999999,\"address\":\"Someshwara Swamy Temple, Halasuru, Someshwara Temple Rd, Halasuru, Someshwarpura, Bengaluru, Karnataka, India\"},\n    \"gps_locati\": {\"lat\": 12.9716,\"long\": 77.5946},  //(must be valid latitude and longitude) accordingly,\n    \"camera_ima\": [{\"base64\":\"abc\",\"fileName\": \"image.png\", \"contentType\": \"image/jpeg\"}, {\"s3Path\":{\"key\":\"abc.png\",\"bucket\":\"clappia\"}}],\n    //\"camera_ima\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\",\n    \"voice\": \"same as camera data\",\n    \"signature\": \"same as camera with contentType as jpg/image\",\n    \"get_data_f\": \"submissionId\" //(submissionId must be valid with the app that has been configured),\n  }\n}",
+                  "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"requestingUserEmailAddress\": \"<requesting_user_email_address>\",\n  \"data\": {\n    \"single_lin\": \"sample test 1\",\n    \"multiline_\": \"text area\",\n    \"rich_text_\": \"<h6 style=\\\"text-align:center\\\">Hello World, <strong>Hello World, </strong><em><strong>Hello World,</strong></em><a href=\\\"htttps://www.google.com\\\" title=\\\"htttps://www.google.com\\\" target=\\\"_blank\\\">Google</a>, <br><br>shreyash Kumar<br>Shreyash</h6>\",\n    \"url_input\": \"https://www.google.com\", // (must be valid URL, else will throw error (e.g. htttps:///www, and others )),\n    \"email_inpu\": \"john.dow@example.com\",  //(must be a valid email form),\n    \"drop_down\": [\"value one\", \"value two\"], // (value must be present in the options and if dependent field value is not there then will throw error),\n    \"single_sel\" : \"value nine\", // (must be.single value, not mutiple and should be present in the options and if dependent field value is not there then will throw error),\n    \"multiple_s\": [\"value one\"], // (value must be present in the options and if dependent field value is not there then will throw error),\n    \"tags\": \"value one, value two\",\n    \"date_selec\": \"01-03-2025\", // (must be in form of Workplace Date Format),\n    \"time_selec\": \"HH:mm\", //(must be in format of Workplace Time Format),\n    \"code_scann\": \"qr code value\",\n    \"nfc_reader\": \"nfc value\",\n    \"ratings\": \"5\", //(must be number in strings and must be less than or equal to the emoji value that has set),\n    \"toggle\": \"true/false\", //(must match the value of True Value and False Value),\n    \"counter\": \"5\", //(must be in range of Minimum and Maximum Value configured),\n    \"slider\": \"4\", //(must be in range of minimum and maximum value configured),\n    \"phone_numb\" : \"+91 1234567\", //(minimum 7 digit value must be there according with valid country code),\n    \"address\": {\"addressLine1\":\"line 1\",\"addressLine2\":\"line 2\",\"city\":\"city value\",\"country\":{\"code\":\"country code (e.g. IN)\",\"name\":\"Country name\"},\"state\":{\"code\":\"State Code\",\"name\":\"State name\"},\"postalCode\":\"Valid Postal Id\"},\n    \"geoaddress\": {\"lat\":12.9755805,\"long\":77.62406159999999,\"address\":\"Someshwara Swamy Temple, Halasuru, Someshwara Temple Rd, Halasuru, Someshwarpura, Bengaluru, Karnataka, India\"},\n    \"gps_locati\": {\"lat\": 12.9716,\"long\": 77.5946},  //(must be valid latitude and longitude) accordingly,\n    \"camera_ima\": [{\"fileId\": \"QA42715-HGO282342-333i30a49g7000000000/sample.pdf\"}],\n    //\"camera_ima\": [{\"base64\":\"abc\",\"fileName\": \"image.png\", \"contentType\": \"image/jpeg\"}],\n    \"voice\": \"same as camera_ima (fileId or base64)\",\n    \"signature\": \"same as camera_ima (fileId or base64; use image contentType for base64)\",\n    \"get_data_f\": \"submissionId\" //(submissionId must be valid with the app that has been configured),\n  }\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -43,7 +43,8 @@
                     "submissions",
                     "create"
                   ]
-                }
+                },
+                "description": "## Create Submission\n\nCreates a new submission in a Clappia app. Field keys in `data` must match your app's block variable names.\n\nSee saved examples for field-type patterns (including **File Id** and **Base64** file uploads)."
               },
               "response": [
                 {
@@ -3123,7 +3124,7 @@
                   "body": "{\n    \"error\": \"Error for appId: <app_id>, workplaceId: <workplace_id> in creating submission\"\n}"
                 },
                 {
-                  "name": "File S3 Key Non Copyable",
+                  "name": "File Id Non Copyable",
                   "originalRequest": {
                     "method": "POST",
                     "header": [
@@ -3159,7 +3160,7 @@
                   "body": "{\n    \"submissionId\": \"<submission_id>\",\n    \"submissionFieldValues\": { //only unique field value map\n        \"<field_variable_name>\": \"<value>\"\n    }\n}"
                 },
                 {
-                  "name": "Invalid File S3 Key Non Copyable (Value and DateType Mismatch)",
+                  "name": "Invalid File Id Non Copyable (Value and DateType Mismatch)",
                   "originalRequest": {
                     "method": "POST",
                     "header": [
@@ -3197,45 +3198,7 @@
                   "body": "{\n    \"error\": \"Error for appId: <app_id>, workplaceId: <workplace_id> in creating submission\"\n}"
                 },
                 {
-                  "name": "Invalid File S3 Key Copyable (Image Field Validation)",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "x-api-key",
-                        "value": "api-key",
-                        "type": "text"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"requestingUserEmailAddress\": \"<requesting_user_email_address>\",\n  \"data\": {\n    \"camera_ima\": [{\"fileId\":\"DEV161318-WFO653416-1hda008d1m8ee0000000/sample_pdf.pdf\"}]\n  }\n}",
-                      "options": {
-                        "raw": {
-                          "language": "json"
-                        }
-                      }
-                    },
-                    "url": {
-                      "raw": "{{baseUrl}}/submissions/create",
-                      "host": [
-                        "{{baseUrl}}"
-                      ],
-                      "path": [
-                        "submissions",
-                        "create"
-                      ]
-                    }
-                  },
-                  "status": "Bad Request",
-                  "code": 400,
-                  "_postman_previewlanguage": "Text",
-                  "header": [],
-                  "cookie": [],
-                  "body": "{\n    \"error\": \"Unsupported File Type. Only format <list of mimeType that are allowed, e.g. videos/*, image/*> accepted.\"\n}"
-                },
-                {
-                  "name": "File S3 Key Copyable",
+                  "name": "File Id Copyable",
                   "originalRequest": {
                     "method": "POST",
                     "header": [
@@ -3271,7 +3234,7 @@
                   "body": "{\n    \"submissionId\": \"<submission_id>\",\n    \"submissionFieldValues\": { //only unique field value map\n        \"<field_variable_name>\": \"<value>\"\n    }\n}"
                 },
                 {
-                  "name": "Invalid File S3 Key Copyable (Value and DateType Mismatch)",
+                  "name": "Invalid File Id Copyable (Value and DateType Mismatch)",
                   "originalRequest": {
                     "method": "POST",
                     "header": [
@@ -3303,188 +3266,6 @@
                   },
                   "status": "Bad Request",
                   "code": 400,
-                  "_postman_previewlanguage": "Text",
-                  "header": [],
-                  "cookie": [],
-                  "body": "{\n    \"error\": \"Error for appId: <app_id>, workplaceId: <workplace_id> in creating submission\"\n}"
-                },
-                {
-                  "name": "Invalid File S3 Key Copyable (Image Field Validation)",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "x-api-key",
-                        "value": "api-key",
-                        "type": "text"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"requestingUserEmailAddress\": \"<requesting_user_email_address>\",\n  \"data\": {\n    \"camera_ima\": [\n        [\n            {\n                \"fileId\":\"DEV161318-WFO653416-1hda008d1m8ee0000000/sample_pdf.pdf\"\n            }\n        ],\n        [\n            {\n                \"fileId\":\"DEV161318-WFO653416-1hda008d1m8ee0000000/sample_pdf.pdf\"\n            }\n        ]\n    ]\n  }\n}",
-                      "options": {
-                        "raw": {
-                          "language": "json"
-                        }
-                      }
-                    },
-                    "url": {
-                      "raw": "{{baseUrl}}/submissions/create",
-                      "host": [
-                        "{{baseUrl}}"
-                      ],
-                      "path": [
-                        "submissions",
-                        "create"
-                      ]
-                    }
-                  },
-                  "status": "Bad Request",
-                  "code": 400,
-                  "_postman_previewlanguage": "Text",
-                  "header": [],
-                  "cookie": [],
-                  "body": "{\n    \"error\": \"Unsupported File Type. Only format <list of mimeType that are allowed, e.g. videos/*, image/*> accepted.\"\n}"
-                },
-                {
-                  "name": "File Upload S3 Non Copyable",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "x-api-key",
-                        "value": "",
-                        "type": "text"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"requestingUserEmailAddress\": \"<requesting_user_email_address>\",\n  \"data\": {\n    \"camera_ima\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\",\n    \"voice\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\",\n    \"signature\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"\n  }\n}",
-                      "options": {
-                        "raw": {
-                          "language": "json"
-                        }
-                      }
-                    },
-                    "url": {
-                      "raw": "{{baseUrl}}/submissions/create",
-                      "host": [
-                        "{{baseUrl}}"
-                      ],
-                      "path": [
-                        "submissions",
-                        "create"
-                      ]
-                    }
-                  },
-                  "_postman_previewlanguage": "Text",
-                  "header": [],
-                  "cookie": [],
-                  "body": "{\n    \"submissionId\": \"<submission_id>\",\n    \"submissionFieldValues\": { //only unique field value map\n        \"<field_variable_name>\": \"<value>\"\n    }\n}"
-                },
-                {
-                  "name": "Invalid File Upload S3 Non Copyable (Value and DateType Mismatch)",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "x-api-key",
-                        "value": "api-key",
-                        "type": "text"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"requestingUserEmailAddress\": \"<requesting_user_email_address>\",\n  \"data\": {\n    \"camera_ima\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\",\n    \"voice\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\",\n    \"signature\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"\n  }\n}",
-                      "options": {
-                        "raw": {
-                          "language": "json"
-                        }
-                      }
-                    },
-                    "url": {
-                      "raw": "{{baseUrl}}/submissions/create",
-                      "host": [
-                        "{{baseUrl}}"
-                      ],
-                      "path": [
-                        "submissions",
-                        "create"
-                      ]
-                    }
-                  },
-                  "_postman_previewlanguage": "Text",
-                  "header": [],
-                  "cookie": [],
-                  "body": "{\n    \"error\": \"Error for appId: <app_id>, workplaceId: <workplace_id> in creating submission\"\n}"
-                },
-                {
-                  "name": "File Upload S3 Copyable Section",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "x-api-key",
-                        "value": "api-key",
-                        "type": "text"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"requestingUserEmailAddress\": \"<requesting_user_email_address>\",\n  \"data\": {\n    \"camera_ima\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"],\n    \"voice\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"],\n    \"signature\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"]\n  }\n}",
-                      "options": {
-                        "raw": {
-                          "language": "json"
-                        }
-                      }
-                    },
-                    "url": {
-                      "raw": "{{baseUrl}}/submissions/create",
-                      "host": [
-                        "{{baseUrl}}"
-                      ],
-                      "path": [
-                        "submissions",
-                        "create"
-                      ]
-                    }
-                  },
-                  "_postman_previewlanguage": "Text",
-                  "header": [],
-                  "cookie": [],
-                  "body": "{\n    \"submissionId\": \"<submission_id>\",\n    \"submissionFieldValues\": { //only unique field value map\n        \"<field_variable_name>\": \"<value>\"\n    }\n}"
-                },
-                {
-                  "name": "Invalid File Upload S3 Copyable Section (Value and DateType Mismatch)",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "x-api-key",
-                        "value": "api-key",
-                        "type": "text"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"requestingUserEmailAddress\": \"<requesting_user_email_address>\",\n  \"data\": {\n    \"camera_ima\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"],\n    \"voice\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"],\n    \"signature\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"]\n  }\n}",
-                      "options": {
-                        "raw": {
-                          "language": "json"
-                        }
-                      }
-                    },
-                    "url": {
-                      "raw": "{{baseUrl}}/submissions/create",
-                      "host": [
-                        "{{baseUrl}}"
-                      ],
-                      "path": [
-                        "submissions",
-                        "create"
-                      ]
-                    }
-                  },
                   "_postman_previewlanguage": "Text",
                   "header": [],
                   "cookie": [],
@@ -3978,7 +3759,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"submissionId\": \"<submission_id>\",\n  \"data\": {\n    \"single_lin\": \"sample test 1\",\n    \"multiline_\": \"text area\",\n    \"rich_text_\": \"<h6 style=\\\"text-align:center\\\">Hello World, <strong>Hello World, </strong><em><strong>Hello World,</strong></em><a href=\\\"htttps://www.google.com\\\" title=\\\"htttps://www.google.com\\\" target=\\\"_blank\\\">Google</a>, <br><br>shreyash Kumar<br>Shreyash</h6>\",\n    \"url_input\": \"https://www.google.com\", // (must be valid URL, else will throw error (e.g. htttps:///www, and others )),\n    \"email_inpu\": \"john.dow@example.com\",  //(must be a valid email form),\n    \"drop_down\": [\"value one\", \"value two\"], // (value must be present in the options and if dependent field value is not there then will throw error),\n    \"single_sel\" : \"value nine\", // (must be.single value, not mutiple and should be present in the options and if dependent field value is not there then will throw error),\n    \"multiple_s\": [\"value one\"], // (value must be present in the options and if dependent field value is not there then will throw error),\n    \"tags\": \"value one, value two\",\n    \"date_selec\": \"01-03-2025\", // (must be in form of Workplace Date Format),\n    \"time_selec\": \"HH:mm\", //(must be in format of Workplace Time Format),\n    \"code_scann\": \"qr code value\",\n    \"nfc_reader\": \"nfc value\",\n    \"ratings\": \"5\", //(must be number in strings and must be less than or equal to the emoji value that has set),\n    \"toggle\": \"true/false\", //(must match the value of True Value and False Value),\n    \"counter\": \"5\", //(must be in range of Minimum and Maximum Value configured),\n    \"slider\": \"4\", //(must be in range of minimum and maximum value configured),\n    \"phone_numb\" : \"+91 1234567\", //(minimum 7 digit value must be there according with valid country code),\n    \"address\": {\"addressLine1\":\"line 1\",\"addressLine2\":\"line 2\",\"city\":\"city value\",\"country\":{\"code\":\"country code (e.g. IN)\",\"name\":\"Country name\"},\"state\":{\"code\":\"State Code\",\"name\":\"State name\"},\"postalCode\":\"Valid Postal Id\"},\n    \"geoaddress\": {\"lat\":12.9755805,\"long\":77.62406159999999,\"address\":\"Someshwara Swamy Temple, Halasuru, Someshwara Temple Rd, Halasuru, Someshwarpura, Bengaluru, Karnataka, India\"},\n    \"gps_locati\": {\"lat\": 12.9716,\"long\": 77.5946},  //(must be valid latitude and longitude) accordingly,\n    \"camera_ima\": [{\"base64\":\"abc\",\"fileName\": \"image.png\", \"contentType\": \"image/jpeg\"}, {\"s3Path\":{\"key\":\"abc.png\",\"bucket\":\"clappia\"}}],\n    //\"camera_ima\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\",\n    \"voice\": \"same as camera data\",\n    \"signature\": \"same as camera with contentType as jpg/image\",\n    \"get_data_f\": \"submissionId\" //(submissionId must be valid with the app that has been configured),\n  }\n}",
+                  "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"submissionId\": \"<submission_id>\",\n  \"data\": {\n    \"single_lin\": \"sample test 1\",\n    \"multiline_\": \"text area\",\n    \"rich_text_\": \"<h6 style=\\\"text-align:center\\\">Hello World, <strong>Hello World, </strong><em><strong>Hello World,</strong></em><a href=\\\"htttps://www.google.com\\\" title=\\\"htttps://www.google.com\\\" target=\\\"_blank\\\">Google</a>, <br><br>shreyash Kumar<br>Shreyash</h6>\",\n    \"url_input\": \"https://www.google.com\", // (must be valid URL, else will throw error (e.g. htttps:///www, and others )),\n    \"email_inpu\": \"john.dow@example.com\",  //(must be a valid email form),\n    \"drop_down\": [\"value one\", \"value two\"], // (value must be present in the options and if dependent field value is not there then will throw error),\n    \"single_sel\" : \"value nine\", // (must be.single value, not mutiple and should be present in the options and if dependent field value is not there then will throw error),\n    \"multiple_s\": [\"value one\"], // (value must be present in the options and if dependent field value is not there then will throw error),\n    \"tags\": \"value one, value two\",\n    \"date_selec\": \"01-03-2025\", // (must be in form of Workplace Date Format),\n    \"time_selec\": \"HH:mm\", //(must be in format of Workplace Time Format),\n    \"code_scann\": \"qr code value\",\n    \"nfc_reader\": \"nfc value\",\n    \"ratings\": \"5\", //(must be number in strings and must be less than or equal to the emoji value that has set),\n    \"toggle\": \"true/false\", //(must match the value of True Value and False Value),\n    \"counter\": \"5\", //(must be in range of Minimum and Maximum Value configured),\n    \"slider\": \"4\", //(must be in range of minimum and maximum value configured),\n    \"phone_numb\" : \"+91 1234567\", //(minimum 7 digit value must be there according with valid country code),\n    \"address\": {\"addressLine1\":\"line 1\",\"addressLine2\":\"line 2\",\"city\":\"city value\",\"country\":{\"code\":\"country code (e.g. IN)\",\"name\":\"Country name\"},\"state\":{\"code\":\"State Code\",\"name\":\"State name\"},\"postalCode\":\"Valid Postal Id\"},\n    \"geoaddress\": {\"lat\":12.9755805,\"long\":77.62406159999999,\"address\":\"Someshwara Swamy Temple, Halasuru, Someshwara Temple Rd, Halasuru, Someshwarpura, Bengaluru, Karnataka, India\"},\n    \"gps_locati\": {\"lat\": 12.9716,\"long\": 77.5946},  //(must be valid latitude and longitude) accordingly,\n    \"camera_ima\": [{\"fileId\": \"QA42715-HGO282342-333i30a49g7000000000/sample.pdf\"}],\n    //\"camera_ima\": [{\"base64\":\"abc\",\"fileName\": \"image.png\", \"contentType\": \"image/jpeg\"}],\n    \"voice\": \"same as camera_ima (fileId or base64)\",\n    \"signature\": \"same as camera_ima (fileId or base64; use image contentType for base64)\",\n    \"get_data_f\": \"submissionId\" //(submissionId must be valid with the app that has been configured),\n  }\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -3994,7 +3775,8 @@
                     "submissions",
                     "edit"
                   ]
-                }
+                },
+                "description": "## Edit Submission\n\nUpdates an existing submission in a Clappia app. Requires `submissionId`. Field keys in `data` must match your app's block variable names.\n\nSee saved examples for field-type patterns (including **File Id** and **Base64** file uploads)."
               },
               "response": [
                 {
@@ -4146,19 +3928,19 @@
                   "body": "{\n    \"error\": \"Field '<field_variable_name>' does not exist in app <app_id>\"\n}"
                 },
                 {
-                  "name": "File Upload S3 Non Copyable",
+                  "name": "File Id Non Copyable",
                   "originalRequest": {
                     "method": "POST",
                     "header": [
                       {
                         "key": "x-api-key",
-                        "value": "api-key",
+                        "value": "",
                         "type": "text"
                       }
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"submissionId\": \"<submission_id>\",\n  \"data\": {\n    \"camera_ima\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\",\n    \"voice\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\",\n    \"signature\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"\n  }\n}",
+                      "raw": "{\n  \"appId\": \"HGO282342\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"submissionId\": \"<submission_id>\",\n  \"data\": {\n    \"camera_ima\": [{\"fileId\":\"QA42715-HGO282342-333i30a49g7000000000/sample.pdf\"}]\n  }\n}",
                       "options": {
                         "raw": {
                           "language": "json"
@@ -4182,7 +3964,7 @@
                   "body": "{}"
                 },
                 {
-                  "name": "Invalid File Upload S3 Non Copyable",
+                  "name": "Invalid File Id Non Copyable (Value and DateType Mismatch)",
                   "originalRequest": {
                     "method": "POST",
                     "header": [
@@ -4194,7 +3976,7 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"submissionId\": \"<submission_id>\",\n  \"data\": {\n    \"camera_ima\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\",\n    \"voice\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\",\n    \"signature\": \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"\n  }\n}",
+                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"submissionId\": \"<submission_id>\",\n  \"data\": {\n    \"camera_ima\": [{\"fileId\":\"DEV161318-WFO653416-1hda008d1m8ee0000000/sample_pdf.pdf\"}]\n  }\n}",
                       "options": {
                         "raw": {
                           "language": "json"
@@ -4212,27 +3994,27 @@
                       ]
                     }
                   },
-                  "status": "Bad Request",
-                  "code": 400,
                   "_postman_previewlanguage": "Text",
                   "header": [],
                   "cookie": [],
-                  "body": "{\n    \"error\": \"Field '<field_variable_name>' does not exist in app <app_id>\"\n}"
+                  "body": "{\n    \"error\": \"Field '<field_variable_name>' does not exist in app <app_id>\"\n}",
+                  "status": "Bad Request",
+                  "code": 400
                 },
                 {
-                  "name": "File Upload S3 Copyable",
+                  "name": "File Id Copyable",
                   "originalRequest": {
                     "method": "POST",
                     "header": [
                       {
                         "key": "x-api-key",
-                        "value": "api-key",
+                        "value": "",
                         "type": "text"
                       }
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"submissionId\": \"<submission_id>\",\n  \"data\": {\n    \"camera_ima\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"],\n    \"voice\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"],\n    \"signature\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"]\n  }\n}",
+                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"submissionId\": \"<submission_id>\",\n  \"data\": {\n    \"camera_ima\": [[{\"fileId\":\"DEV161318-WFO653416-1hda008d1m8ee0000000/sample_pdf.pdf\"}],[{\"fileId\":\"DEV161318-WFO653416-1hda008d1m8ee0000000/sample_pdf.pdf\"}]]\n  }\n}",
                       "options": {
                         "raw": {
                           "language": "json"
@@ -4256,7 +4038,7 @@
                   "body": "{}"
                 },
                 {
-                  "name": "Invalid File Upload S3 Copyable",
+                  "name": "Invalid File Id Copyable (Value and DateType Mismatch)",
                   "originalRequest": {
                     "method": "POST",
                     "header": [
@@ -4268,7 +4050,7 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"submissionId\": \"<submission_id>\",\n  \"data\": {\n    \"camera_ima\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"],\n    \"voice\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"],\n    \"signature\": [\"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\", \"s3://bucket/some-prefix-1/some-prefix-2/filename1.png||s3://bucket/some-prefix-3/some-prefix-4/filename2.png\"]\n  }\n}",
+                      "raw": "{\n  \"appId\": \"<app_id>\",\n  \"workplaceId\": \"<workplace_id>\",\n  \"submissionId\": \"<submission_id>\",\n  \"data\": {\n    \"camera_ima\": [\n        [\n            {\n                \"fileId\":\"DEV161318-WFO653416-1hda008d1m8ee0000000/sample_pdf.pdf\"\n            }\n        ],\n        [\n            {\n                \"fileId\":\"DEV161318-WFO653416-1hda008d1m8ee0000000/sample_pdf.pdf\"\n            }\n        ]\n    ]\n  }\n}",
                       "options": {
                         "raw": {
                           "language": "json"
@@ -4286,12 +4068,12 @@
                       ]
                     }
                   },
-                  "status": "Bad Request",
-                  "code": 400,
                   "_postman_previewlanguage": "Text",
                   "header": [],
                   "cookie": [],
-                  "body": "{\n    \"error\": \"Field '<field_variable_name>' does not exist in app <app_id>\"\n}"
+                  "body": "{\n    \"error\": \"Field '<field_variable_name>' does not exist in app <app_id>\"\n}",
+                  "status": "Bad Request",
+                  "code": 400
                 },
                 {
                   "name": "File Upload Base 64 Non Copyable",
@@ -27137,14 +26919,18 @@
             "method": "POST",
             "header": [
               {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
                 "key": "x-api-key",
-                "value": "qa42715b6740afb014b4dac933825dd96ab025f",
+                "value": "{{apiKey}}",
                 "type": "text"
               }
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"appId\": \"HGO282342\",\n    \"workplaceId\": \"QA42715\",\n    \"fileName\": \"sample.pdf\",\n    \"mimeType\": \"application/pdf\",\n    \"uploadCategory\": \"submissionData\"\n}",
+              "raw": "{\n    \"appId\": \"HGO282342\",\n    \"fileName\": \"sample.pdf\",\n    \"mimeType\": \"application/pdf\",\n    \"uploadCategory\": \"submissionData\"\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -27160,7 +26946,8 @@
                 "file",
                 "generateFileUploadUrl"
               ]
-            }
+            },
+            "description": "## Generate File Upload URL\n\nThis endpoint returns a pre-signed **PUT** URL so you can upload a file to Clappia storage before attaching it to a submission.\n\n**Typical flow**\n\n1. Call `generateFileUploadUrl` with file metadata.\n2. `PUT` the file bytes to the returned `fileUploadUrl` (see **Upload File to the Pre-signed PUT URL**).\n3. Pass the returned `fileId` in **Create Submissions** or **Edit Submissions** — see saved **File Id** examples in either request.\n\n---\n\n## Request body parameters\n\n| Parameter | Required | Description |\n|-----------|----------|-------------|\n| `appId` | Yes | Clappia App ID (often the source app where files originate). |\n| `fileName` | Yes | File name including extension (e.g. `sample.pdf`, `image.png`). |\n| `mimeType` | Yes | MIME type of the file (e.g. `application/pdf`, `image/jpeg`). Must match the file you upload. |\n| `uploadCategory` | Yes | Storage category. For submission file fields, use `\"submissionData\"`. |\n\n---\n\n## `uploadCategory`\n\nSame values as **Generate File Download URL**. For files attached to a **submission**, use `\"submissionData\"`.\n\nOther allowed values: submissionData, appIcon, printTemplateHtml, htmlBlockFile, printTemplateFile, attachedFile, imageAttachedFile, videoAttachedFile, pdfAttachedFile\n\n---\n\n## Response\n\n| Field | Description |\n|-------|-------------|\n| `fileUploadUrl` | Pre-signed S3 URL. `PUT` your file here (step 2). Expires in ~5 minutes. |\n| `fileId` | Use in **Create Submissions** (step 3). Format: `{workplaceId}-{appId}-{id}/{fileName}` |\n\n**Example response:**\n\n```json\n{\n  \"fileUploadUrl\": \"https://clappia-data-uploads.../WORKPLACE-APPID-xxx/sample.pdf?...\",\n  \"fileId\": \"QA42715-HGO282342-333i30a49g7000000000/sample.pdf\"\n}\n```\n\n---\n\n## Sample cURL — Step 1: get upload URL\n\n```bash\ncurl --location --request POST '{{baseUrl}}/file/generateFileUploadUrl' \\\n  --header 'Content-Type: application/json' \\\n  --header 'x-api-key: <your-api-key>' \\\n  -d '{\n    \"appId\": \"HGO282342\",\n    \"fileName\": \"sample.pdf\",\n    \"mimeType\": \"application/pdf\",\n    \"uploadCategory\": \"submissionData\"\n  }'\n```\n\n---\n\n## Sample cURL — Step 2: upload file\n\nUse `fileUploadUrl` from step 1. **`Content-Type` must match `mimeType`.**\n\n```bash\ncurl --location --request PUT '<fileUploadUrl-from-step-1>' \\\n  --header 'Content-Type: application/pdf' \\\n  --data-binary '@./sample.pdf'\n```\n\n---\n\n## Sample JavaScript (Node 18+)\n\n```javascript\nconst apiKey = process.env.CLAPPIA_API_KEY;\nconst appId = \"HGO282342\";\nconst fileName = \"sample.pdf\";\nconst mimeType = \"application/pdf\";\nconst fileBase64 = \"<base64-string>\";\n\nconst urlRes = await fetch(\"{{baseUrl}}/file/generateFileUploadUrl\", {\n  method: \"POST\",\n  headers: { \"Content-Type\": \"application/json\", \"x-api-key\": apiKey },\n  body: JSON.stringify({\n    appId,\n    fileName,\n    mimeType,\n    uploadCategory: \"submissionData\",\n  }),\n});\nconst { fileUploadUrl, fileId } = await urlRes.json();\n\nawait fetch(fileUploadUrl, {\n  method: \"PUT\",\n  headers: { \"Content-Type\": mimeType },\n  body: Buffer.from(fileBase64, \"base64\"),\n});\n\n// Step 3: pass fileId in Create Submissions or Edit Submissions — see File Id examples there\n```\n\n---\n\n## Notes\n\n- Do not send `x-api-key` on the S3 `PUT` — only on Clappia API calls.\n- `appId` on upload may differ from `appId` on create when copying files across apps.\n"
           },
           "response": []
         },
@@ -27244,7 +27031,8 @@
                   "value": "PutObject"
                 }
               ]
-            }
+            },
+            "description": "## Upload File (Step 2)\n\n`PUT` the raw file to the **`fileUploadUrl`** returned by **Generate File Upload URL**.\n\n- **Body:** raw file bytes (Postman: **binary** / file mode).\n- **Header:** `Content-Type` = same `mimeType` used in step 1.\n- **No** `x-api-key` on this request.\n\nReplace the example URL with your `fileUploadUrl` from step 1. After HTTP 200, use `fileId` from step 1 in **Create Submissions** or **Edit Submissions** (step 3).\n"
           },
           "response": []
         },
@@ -27281,11 +27069,12 @@
                 "generateFileDownloadUrl"
               ]
             },
-            "description": "## Generate File Download URL\n\nThis endpoint generates a download URL for any file uploaded in Clappia. Given a file identifier and upload category, it returns a pre-signed URL that can be used to download the file.\n\n---\n\n## `uploadCategory`\n\nThe `uploadCategory` parameter specifies the type/category of the uploaded file. To download a file from a **Clappia App Submission**, pass `uploadCategory` as `\"submissionData\"`.\n\nAll allowed values are listed below:\n\n- submissionData\n    \n- appIcon\n    \n- printTemplateHtml\n    \n- htmlBlockFile\n    \n- printTemplateFile\n    \n- attachedFile\n    \n- imageAttachedFile\n    \n- videoAttachedFile\n    \n- pdfAttachedFile\n    \n\n---\n\n## `fileId`\n\nThe `fileId` is the unique identifier for the file you want to download. This value is received from the **`getSubmissions`** or **`getSubmission`** endpoint as part of the submission data.\n\n---\n\n## Sample cURL Request\n\n``` bash\ncurl --location --request POST '{{baseUrl}}/file/generateFileDownloadUrl' \\\n--header 'Content-Type: application/json' \\\n--header 'x-api-key: <your-api-key>' \\\n-d '{\n  \"appId\": \"APP123\",\n  \"fileId\": \"Use File Id received from GetSubmissions or GetSubmission API\",\n  \"uploadCategory\": \"submissionData\"\n}'\n\n ```"
+            "description": "## Generate File Download URL\n\nThis endpoint generates a download URL for any file uploaded in Clappia. Given a file identifier and upload category, it returns a pre-signed URL that can be used to download the file.\n\n---\n\n## `uploadCategory`\n\nThe `uploadCategory` parameter specifies the type/category of the uploaded file. To download a file from a **Clappia App Submission**, pass `uploadCategory` as `\"submissionData\"`.\n\nAll allowed values are listed below:\n\n- submissionData\n    \n- appIcon\n    \n- printTemplateHtml\n    \n- htmlBlockFile\n    \n- printTemplateFile\n    \n- attachedFile\n    \n- imageAttachedFile\n    \n- videoAttachedFile\n    \n- pdfAttachedFile\n    \n\n---\n\n## `fileId`\n\nThe `fileId` is the unique identifier for the file you want to download. This value is received from the **`getSubmissions`** or **`getSubmission`** endpoint as part of the submission data.\n\n---\n\n## Sample cURL Request\n\n``` bash\ncurl --location --request POST '{{baseUrl}}/file/generateFileDownloadUrl' \\\n--header 'Content-Type: application/json' \\\n--header 'x-api-key: <your-api-key>' \\\n-d '{\n  \"appId\": \"APP123\",\n  \"workplaceId\": \"YOUR_WORKPLACE_ID\",\n  \"fileId\": \"Use File Id received from GetSubmissions or GetSubmission API\",\n  \"uploadCategory\": \"submissionData\"\n}'\n\n ```"
           },
           "response": []
         }
-      ]
+      ],
+      "description": "## File upload & download\n\n**Upload flow (3 steps)**\n\n1. **Generate File Upload URL** — get `fileUploadUrl` and `fileId`\n2. **Upload File to the Pre-signed PUT URL** — `PUT` file bytes to `fileUploadUrl`\n3. **Create Submissions** or **Edit Submissions** — pass `fileId` in your file field; see **File Id** saved examples\n\n**Download:** **Generate File Download URL** with `fileId` from Get Submission / Get Submissions.\n"
     }
   ],
   "auth": {
