@@ -18249,6 +18249,54 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Create App",
+          "item": [
+            {
+              "name": "Create App",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "x-api-key",
+                    "value": "{{apiKey}}",
+                    "description": "Your workplace API key"
+                  },
+                  {
+                    "key": "workplaceId",
+                    "value": "{{workplaceId}}",
+                    "description": "Workplace ID of your Workplace"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"QCI Test App\",\n  \"appIcon\": \"\",\n  \"appIconColor\": \"#ffffff\",\n  \"appIconBackgroundColor\": \"#3096f3\",\n  \"appDescription\": \"A comprehensive employee feedback survey application\",\n  \"requestingUserEmailAddress\": \"nachiket.agrawal@clappia.com\",\n  \"workplaceId\": \"DEE104645\",\n  \"folderId\": \"\",\n  \"pages\": [\n    {\n      \"pageDetails\": {\n        \"displayCondition\": \"\",\n        \"showSubmitButton\": true,\n        \"prevButtonText\": \"Previous\",\n        \"nextButtonText\": \"Next\"\n      },\n      \"sections\": [\n        {\n          \"sectionDetails\": {\n            \"name\": \"Personal Information\",\n            \"description\": \"Please provide your basic information\",\n            \"addSectionText\": \"Add another Section\",\n            \"addSectionTextPosition\": \"right\",\n            \"displayCondition\": \"\",\n            \"allowCopy\": false,\n            \"allowEditCopyAfterSubmission\": true,\n            \"maxNumberOfCopies\": \"3\",\n            \"childSectionIndices\": [],\n            \"uniqueFieldNames\": [],\n            \"retainValues\": false,\n            \"keepSectionCollapsed\": false\n          },\n          \"fieldDefinitions\": [\n            {\n              \"fieldType\": \"singleLineText\",\n              \"label\": \"Full Name\",\n              \"description\": \"Enter your complete name\",\n              \"required\": true,\n              \"fieldName\": \"full_name\",\n              \"blockWidthPercentageDesktop\": 50,\n              \"blockWidthPercentageMobile\": 100,\n              \"displayCondition\": \"\",\n              \"retainValues\": true,\n              \"isEditable\": true,\n              \"editabilityCondition\": \"\",\n              \"defaultValue\": \"\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/appdefinitionv2/createApp",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "appdefinitionv2",
+                    "createApp"
+                  ]
+                },
+                "description": "Create a new Clappia app with defined pages, sections, and field definitions."
+              },
+              "response": []
+            }
+          ]
         }
       ]
     },
