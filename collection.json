@@ -27075,7 +27075,89 @@
         }
       ],
       "description": "## File upload & download\n\n**Upload flow (3 steps)**\n\n1. **Generate File Upload URL** — get `fileUploadUrl` and `fileId`\n2. **Upload File to the Pre-signed PUT URL** — `PUT` file bytes to `fileUploadUrl`\n3. **Create Submissions** or **Edit Submissions** — pass `fileId` in your file field; see **File Id** saved examples\n\n**Download:** **Generate File Download URL** with `fileId` from Get Submission / Get Submissions.\n"
-    }
+    },
+        {
+    "name": "Bulk Upload",
+    "description": "Bulk upload submissions from an Excel file.\n\nUpload the file via **File Management** with `uploadCategory`: `\"bulkUpload\"`, then import and poll status here.",
+    "item": [
+      {
+        "name": "Import Bulk Upload Excel",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "x-api-key",
+              "value": "{{apiKey}}",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"appId\": \"<app_id>\",\n  \"fileId\": \"<file_id>\",\n  \"requestingUserEmailAddress\": \"<requesting_user_email_address>\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{baseUrl}}/bulk-data-actions/importBulkUploadExcel",
+            "host": [
+              "{{baseUrl}}"
+            ],
+            "path": [
+              "bulk-data-actions",
+              "importBulkUploadExcel"
+            ]
+          },
+          "description": "## Import Bulk Upload Excel\n\nStarts an async bulk upload from an Excel file uploaded via **File Management** (`uploadCategory`: `\"bulkUpload\"`).\n\nPass `appId`, `fileId`, and optionally `requestingUserEmailAddress` or `requestingUserPhoneNumber` (not both). Returns `bulkUploadId`."
+        },
+        "response": []
+      },
+      {
+        "name": "Get Bulk Upload Status",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "x-api-key",
+              "value": "{{apiKey}}",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"appId\": \"<app_id>\",\n  \"bulkUploadId\": \"<bulk_upload_id>\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{baseUrl}}/bulk-data-actions/getBulkUploadStatus",
+            "host": [
+              "{{baseUrl}}"
+            ],
+            "path": [
+              "bulk-data-actions",
+              "getBulkUploadStatus"
+            ]
+          },
+          "description": "## Get Bulk Upload Status\n\nPolls a bulk upload job. Pass `appId` and `bulkUploadId`.\n\n`status` is `QUEUED`, `PROCESSING`, `COMPLETED`, or `FAILED`. Poll until `COMPLETED` or `FAILED`."
+        },
+        "response": []
+      }
+    ]
+  }
   ],
   "auth": {
     "type": "apikey",
